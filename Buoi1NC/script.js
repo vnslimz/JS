@@ -99,13 +99,13 @@ if (Number.isInteger(bai7_n) == false){
     console.log('Nhap gia tri n kha dung');
 }
 else{
-    if (bai7_n%2 == 1){
+    if (bai7_n % 2 == 1){
         S = 0
     }
     else{
         S = 2020*bai7_x;
-        for (i=2; i<=bai7_n; i+=1){
-            S += ((bai7_x**i)/(3**(i-1)))
+        for (i = 2; i <= bai7_n; i += 1){
+            S += ((bai7_x ** i)/(3 ** (i - 1)))
         }
     }
 }
@@ -178,8 +178,54 @@ for (i = 0; i < uocNho.length; i++){
     tongUocNho += uocNho[i]
 }
 console.log(tongUocNho);
+console.log('\n');
 
 
 console.log('Bai 13: ');
-let sohoanthien = 100;
-let bai13uocSo = []
+for (i = 1; i <= 1000; i++){
+    let bai13uocSo = []
+    for (n = 1; n <= i; n++){
+        if (i % n == 0){
+            bai13uocSo.push(n)
+        } else{
+            continue
+        }
+    }
+    let tongUocSo = 0;
+    for (n = 0; n < bai13uocSo.length; n ++){
+        tongUocSo += bai13uocSo[n]
+    }
+    if (tongUocSo == i * 2){
+        console.log(i + ' la so hoan hao');
+    }
+}
+console.log('\n');
+
+
+console.log('Bai 14: ');
+let bai14_n = 199;
+let bai14_text = bai14_n.toString();
+let bai14_digit = bai14_text.split('')
+let bai14_tich = 1
+for ( i = 0; i < bai14_digit.length; i++){
+    bai14_tich *= parseInt(bai14_digit[i])
+}
+console.log(bai14_tich);
+console.log('\n');
+
+
+console.log('Bai 15: ');
+let bai15_n = 1999;
+let bai15_text = bai15_n.toString();
+let bai15_digit = bai15_text.split('')
+let bai15_tich = 1
+for ( i = 0; i < bai15_digit.length; i++){
+    if (bai15_digit[i] % 2 == 1){
+        bai15_tich *= parseInt(bai15_digit[i])
+    }
+}
+console.log(bai15_tich);
+console.log('\n');
+
+
+console.log('Bai 16: ');
