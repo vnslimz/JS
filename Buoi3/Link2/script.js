@@ -26,3 +26,15 @@ const sum = cart.reduce(function(result, item){
 console.log(sum);
 
 console.log('Bai 2:');
+
+const arrCount = [1, 2, 3, 4, 5, 2, 3, 4, 2, 2, 7, 8, 8];
+const count = arrCount.reduce((pre, curr) => {
+  if (!pre[curr]){
+    pre[curr] = 1;
+  } else {
+    pre[curr]++;
+  }
+  return pre
+}, {})
+console.log(count);
+
