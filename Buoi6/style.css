@@ -1,0 +1,45 @@
+#jobTable, th, td{
+    border: 1px, solid, black;
+    border-collapse: collapse;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+#jobTable th:nth-child(1){
+    width: 300px;
+}
+#jobTable th:nth-child(2){
+    width: 800px;
+}
+#jobTable th:nth-child(3){
+    width: 200px;
+}
+
+.pending {
+    color: red;
+    cursor: pointer;
+}
+  
+.done {
+    color: green;
+    cursor: pointer;
+}
+
+#jobTable td:nth-child(4){
+    width: 100px;
+}
+#jobTable td:nth-child(5){
+    width: 100px;
+}
+
+
+#inputJob{
+    font-size: 20px;
+    height: 30px;
+    width: 200px;
+}
+button{
+    height: 30px;
+    font-size: 20px;
+}
